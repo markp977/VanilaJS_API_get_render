@@ -4,7 +4,7 @@
     <script>
         const pokemonDataCollection = [];
     
-        function getPokeData(){
+        function getPokemonData(){
             let randomId = 1;
             let fetches = [];
             for (i=0; i < 10; i++) {
@@ -66,7 +66,7 @@
             .then(response => displayPlaceHolders(response))
         }
     
-        getPokeData();
+        getPokemonData();
         getPlaceHolderData();
     </script>
     <title>API Search & Render</title>
